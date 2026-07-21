@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist/apps/web",
     "setup": "npm install",
     "dev": "concurrently --kill-others --raw \"npm run dev --prefix apps/web\"",
     "build": "concurrently --raw \"npm run build --prefix apps/web\"",
@@ -10,7 +12,8 @@
     "lint": "concurrently --raw \"npm run lint --prefix apps/web\""
   },
   "devDependencies": {
-    "concurrently": "^10.0.3"
+    "concurrently": "^10.0.3",
+    "gh-pages": "^6.3.0"
   },
   "workspaces": [
     "apps/*"
