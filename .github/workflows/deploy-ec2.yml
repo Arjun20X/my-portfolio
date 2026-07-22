@@ -35,6 +35,7 @@ jobs:
           source: "dist/apps/web/*"
           target: "/var/www/portfolio"
           strip_components: 3
+          overwrite: true
 
       - name: Fix permissions and reload Nginx
         uses: appleboy/ssh-action@v1.0.3
