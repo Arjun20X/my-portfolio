@@ -330,7 +330,7 @@ export default function HomePage() {
             >
               Full-Stack Developer building fast, scalable web apps with the
               MERN stack — and a competitive programmer who has solved{" "}
-              <span className="text-foreground">1200+ DSA problems</span>.
+              <span className="text-foreground">1300+ DSA problems</span>.
             </motion.p>
             <motion.div
               variants={fadeUp}
