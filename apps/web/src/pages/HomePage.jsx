@@ -450,7 +450,7 @@ export default function HomePage() {
                 ["1300+", "DSA Solved"],
                 ["1", "Internship & Freelance"],
                 ["79%", "B.Tech CGPA"],
-                ["5+", "Coding Platforms"],
+                ["4+", "Coding Platforms"],
               ].map(([n, l]) => (
                 <div
                   key={l}
