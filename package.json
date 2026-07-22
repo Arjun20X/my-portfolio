@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build:gh-pages",
     "deploy": "gh-pages -d dist/apps/web",
     "setup": "npm install",
     "dev": "concurrently --kill-others --raw \"npm run dev --prefix apps/web\"",
     "build": "concurrently --raw \"npm run build --prefix apps/web\"",
+    "build:gh-pages": "npx cross-env BASE_PATH=/my-portfolio/ concurrently --raw \"npm run build --prefix apps/web\"",
     "start": "concurrently --kill-others --raw",
     "lint": "concurrently --raw \"npm run lint --prefix apps/web\""
   },
