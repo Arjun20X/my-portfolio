@@ -447,7 +447,7 @@ export default function HomePage() {
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4 sm:grid-cols-4">
               {[
-                ["1200+", "DSA Solved"],
+                ["1300+", "DSA Solved"],
                 ["1", "Internship & Freelance"],
                 ["79%", "B.Tech CGPA"],
                 ["5+", "Coding Platforms"],
