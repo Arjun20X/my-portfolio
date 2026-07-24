@@ -23,11 +23,11 @@ import {
 } from "lucide-react";
 
 const PROFILE_IMG =
-  "https://horizons-cdn.hostinger.com/c1c4af78-c151-4675-9685-f9b53c1ba82c/83e36437c36c5a48aabd34a20a76314a.png";
+  "https://res.cloudinary.com/drc3ol2sb/image/upload/v1784906283/ChatGPT_Image_Feb_15_2026_12_20_14_AM_tomnrl.png";
 const STUDY_NOTION_IMG =
-  "https://images.hostinger.com/fbe54be7-9a2a-4ca9-a870-a37ae86f2cfe.png";
+  "https://res.cloudinary.com/drc3ol2sb/image/upload/v1784906228/studynotion_img_tztboz.png";
 const AI_PLATFORM_IMG =
-  "https://images.hostinger.com/522e2062-981f-4d8c-83e8-93f54e215d87.png";
+  "https://res.cloudinary.com/drc3ol2sb/image/upload/v1784906161/ai_skill_img_tciakn.png";
 
 const links = {
   github: "https://github.com/Arjun20X",
