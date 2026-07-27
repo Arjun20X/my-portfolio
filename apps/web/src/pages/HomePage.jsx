@@ -20,6 +20,7 @@ import {
   ChevronRight,
   Cpu,
   Braces,
+  FileText,
 } from "lucide-react";
 
 const PROFILE_IMG =
@@ -38,6 +39,7 @@ const links = {
   codechef: "https://www.codechef.com/users/kettle_lark_99",
   email: "arjunpratapsingh2082004@gmail.com",
   phone: "+91 8960962697",
+  resume: "https://drive.google.com/file/d/11lRHJL6O__ax6bAUuJYH-5Ddr97kiS0J/view?usp=sharing",
 };
 
 const nav = [
@@ -349,32 +351,40 @@ export default function HomePage() {
               >
                 Let's Talk
               </button>
+              <a
+                href={links.resume}
+                target="_blank"
+                rel="noreferrer"
+                className="group inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-6 py-3 font-semibold text-primary transition-all hover:bg-primary/20 hover:scale-105 active:scale-95"
+              >
+                <FileText className="h-4 w-4" /> Resume
+              </a>
             </motion.div>
             <motion.div
               variants={fadeUp}
-              className="mt-8 flex items-center gap-5 text-muted-foreground"
+              className="mt-8 flex items-center gap-4 text-muted-foreground"
             >
               <a
                 href={links.github}
                 target="_blank"
                 rel="noreferrer"
-                className="transition-colors hover:text-primary"
+                className="group relative flex h-10 w-10 items-center justify-center rounded-full border border-primary/30 bg-primary/10 text-primary transition-all duration-300 hover:scale-110 hover:border-primary/60 hover:bg-primary/20 hover:shadow-[0_0_15px_hsl(165_90%_50%/0.3)]"
               >
-                <Github />
+                <Github className="h-5 w-5" />
               </a>
               <a
                 href={links.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="transition-colors hover:text-primary"
+                className="group relative flex h-10 w-10 items-center justify-center rounded-full border border-primary/30 bg-primary/10 text-primary transition-all duration-300 hover:scale-110 hover:border-primary/60 hover:bg-primary/20 hover:shadow-[0_0_15px_hsl(165_90%_50%/0.3)]"
               >
-                <Linkedin />
+                <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href={`mailto:${links.email}`}
-                className="transition-colors hover:text-primary"
+                className="group relative flex h-10 w-10 items-center justify-center rounded-full border border-primary/30 bg-primary/10 text-primary transition-all duration-300 hover:scale-110 hover:border-primary/60 hover:bg-primary/20 hover:shadow-[0_0_15px_hsl(165_90%_50%/0.3)]"
               >
-                <Mail />
+                <Mail className="h-5 w-5" />
               </a>
               <span className="flex items-center gap-1.5 text-sm">
                 <MapPin className="h-4 w-4" /> Ghaziabad, UP
